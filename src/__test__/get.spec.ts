@@ -1,27 +1,27 @@
 import { Dictionary, diksio } from "..";
 
-interface Registrant {
-    fullName: string,
-    email: string,
-    password: string
-}
-
-const registrationDictionary: Dictionary<Registrant> = {
-    fullName: {
-        en: "Full Name",
-        id: "Nama Lengkap"
-    },
-    email: {
-        en: "Email",
-        id: "Email"
-    },
-    password: {
-        en: "Password",
-        id: "Kata Kunci"
-    }
-}
-
 describe("get test", () => {
+    interface Registrant {
+        fullName: string,
+        email: string,
+        password: string
+    }
+
+    const registrationDictionary: Dictionary<Registrant> = {
+        fullName: {
+            en: "Full Name",
+            id: "Nama Lengkap"
+        },
+        email: {
+            en: "Email",
+            id: "Email"
+        },
+        password: {
+            en: "Password",
+            id: "Kata Kunci"
+        }
+    }
+
     it("Should return correct english fullname", () => {
 
         const actual = diksio.get("fullName", "en", registrationDictionary)
