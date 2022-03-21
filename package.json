@@ -1,0 +1,38 @@
+{
+    "name": "nm-diksio",
+    "version": "1.0.0",
+    "description": "Dictionary tools for multilanguage support",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "/dist"
+    ],
+    "scripts": {
+        "test": "jest",
+        "clean": "rm -rf ./dist",
+        "build": "yarn clean && tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/supendi/nm-diksio.git"
+    },
+    "keywords": [
+        "dictionary",
+        "multilanguage"
+    ],
+    "author": "github.com/supendi",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/supendi/nm-diksio/issues"
+    },
+    "homepage": "https://github.com/supendi/nm-diksio#readme",
+    "devDependencies": {
+        "@babel/core": "^7.13.16",
+        "@babel/preset-env": "^7.13.15",
+        "@babel/preset-typescript": "^7.13.0",
+        "@types/jest": "^26.0.22",
+        "babel-jest": "^26.6.3",
+        "jest": "^26.6.3",
+        "node-fetch": "^2.6.1"
+    }
+}
