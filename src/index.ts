@@ -6,7 +6,7 @@ export interface Languages {
 export type Dictionary<T> = { [x in keyof T]: Languages }
 
 export const diksio = {
-    get: <TDictionary>(key: keyof TDictionary, lang: keyof Languages, dictionary: TDictionary): string | undefined => {
+    get: <TDictionary>(dictionary: TDictionary, key: keyof TDictionary, lang: keyof Languages): string | undefined => {
         var value = dictionary[key]
         if (value) {
             const languages = value as Languages

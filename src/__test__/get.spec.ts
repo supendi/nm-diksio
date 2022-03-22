@@ -24,15 +24,14 @@ describe("get test", () => {
 
     it("Should return correct english fullname", () => {
 
-        const actual = diksio.get("fullName", "en", registrationDictionary)
-
+        const actual = diksio.get(registrationDictionary, "fullName", "en")
         const expected = "Full Name"
         expect(actual).toEqual(expected)
     })
 
     it("Should return correct indonesian fullname", () => {
 
-        const actual = diksio.get("fullName", "id", registrationDictionary)
+        const actual = diksio.get(registrationDictionary, "fullName", "id")
 
         const expected = "Nama Lengkap"
         expect(actual).toEqual(expected)
@@ -40,7 +39,7 @@ describe("get test", () => {
 
     it("Should return correct english email", () => {
 
-        const actual = diksio.get("email", "en", registrationDictionary)
+        const actual = diksio.get(registrationDictionary, "email", "en")
 
         const expected = "Email"
         expect(actual).toEqual(expected)
@@ -48,7 +47,7 @@ describe("get test", () => {
 
     it("Should return correct indonesian email", () => {
 
-        const actual = diksio.get("email", "id", registrationDictionary)
+        const actual = diksio.get(registrationDictionary, "email", "id")
 
         const expected = "Email"
         expect(actual).toEqual(expected)
@@ -56,14 +55,14 @@ describe("get test", () => {
 
     it("Should return correct english password", () => {
 
-        const actual = diksio.get("password", "en", registrationDictionary)
+        const actual = diksio.get(registrationDictionary, "password", "en")
 
         const expected = "Password"
         expect(actual).toEqual(expected)
     })
     it("Should return correct indonesian password", () => {
 
-        const actual = diksio.get("password", "id", registrationDictionary)
+        const actual = diksio.get(registrationDictionary, "password", "id")
 
         const expected = "Kata Kunci"
         expect(actual).toEqual(expected)
